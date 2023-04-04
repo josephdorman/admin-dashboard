@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: RobotoBold, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 0.9fr 5fr;
+  grid-template-rows: 1.2fr 4fr;
+}
+
+.header {
+  background-color:white;
+
+  grid-column: 2;
+}
+
+.sidebar {
+  background-color: #1992d4;
+  color: white;
+
+  grid-column: 1;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 35px 220px 120px;
+  gap: 30px;
+  
+  padding: 10px;
+}
+
+#logo {
+  width: 35px;
+  height: 35px;
+}
+
+#title {
+  font-size: 24px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+}
+
+.sidebar-title ul{
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 8px;
+
+  align-items: center;
+}
+
+.sidebar-title ul li:first-child {
+  justify-self: center;
+}
+
+.nav ul,
+.help ul{
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  grid-template-rows: repeat(6, 30px);
+  gap: 8px;
+
+  align-items: center;
+}
+
+.nav ul li:nth-child(odd),
+.help ul li:nth-child(odd) {
+  justify-self: center;
+}
+
+.body {
+  background-color: #e2e8f0;
+
+  grid-column: 2;
+  grid-row: 2;
+}

@@ -129,6 +129,43 @@ button {
 
 }
 
+.project-wrapper {
+
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 30px;
+  padding: 35px 30px;
+  margin-top: 10px;
+
+  background: linear-gradient(to right, #f0b429 2%, white 2%);
+  border-radius: 8px;
+  width: 380px;
+  height: 200px;
+}
+
+.card-icons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 25px;
+}
+
+.card-body {
+  grid-column: 1 / -1;
+  grid-row: 1;
+
+}
+
+.card-body p {
+  color: grey;
+  font-family: Roboto;
+
+  margin-top: 5px;
+}
+
 .announcements {
   grid-column: 2;
 }
@@ -138,6 +175,7 @@ button {
   padding: 0px 30px;
   margin-top: 10px;
   border-radius: 10px;
+  box-shadow: 2px 3px 5px grey;
 }
 
 .announcement {
@@ -167,6 +205,7 @@ button {
   background-color: white;
   margin-top: 10px;
   border-radius: 10px;
+  box-shadow: 2px 3px 5px grey;
   padding: 20px;
   
   display: grid;
